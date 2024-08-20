@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | KnightedTrainerAlpha</title>
+    <link rel="stylesheet" href="TemplateData/style.css" />
+</head>
+<body style="text-align: center">
+    <canvas id="unity-canvas" width=800 height=1340 style="width: 800px; height: 1340px; background: #231F20"></canvas>
+    <script src="Build/TrainerWeb.loader.js"></script>
+    <script>createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "Build/TrainerWeb.data",
+            frameworkUrl: "Build/TrainerWeb.framework.js",
+            codeUrl: "Build/TrainerWeb.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "GameKnight",
+            productName: "KnightedTrainerAlpha",
+            productVersion: "1.5.06",
+            // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+            // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        });</script>
+</body>
+</html>
